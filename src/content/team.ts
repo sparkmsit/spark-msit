@@ -11,12 +11,20 @@ import type { FacultyMember, TeamMember, Department } from "./types";
 // ============================================================================
 
 export const faculty: FacultyMember = {
-  name: "Dr. Deepshika Yadav Ma'am",
+  name: "Dr. Deepshika Yadav",
   role: "Faculty Team",
   photo: "[SPARK-CORE-FACULTY-DR-DEEPSHIKA-YADAV]",
 };
 
 export const executivePanel: TeamMember[] = [
+  {
+    id: "chief-advisor",
+    name: "Biswamohan Singh",
+    role: "Chief Advisor",
+    description:
+      "The Chief Advisor provides strategic guidance and oversight to SPARK. He helps set the direction for the team, coordinates different activities and ensures that everything stays on track.",
+    photo: "[SPARK-CORE-CHIEF-ADVISOR-BISWAMOHAN-SINGH]",
+  },
   {
     id: "president",
     name: "Ashvini Adhikari",
@@ -52,21 +60,15 @@ export const departments: Department[] = [
     members: [
       {
         name: "Palak Gupta",
-        role: "Research Head",
+        role: "Executive Head",
         status: "active",
-        photo: "[SPARK-DEPT-RESEARCH-HEAD-PALAK-GUPTA]",
+        photo: "/assets/team/palak-research-head.jpeg",
       },
       {
         name: "Manaswin Kath",
-        role: "Research Deputy Head",
+        role: "Deputy Head",
         status: "active",
-        photo: "[SPARK-DEPT-RESEARCH-DEPUTY-MANASWIN-KATH]",
-      },
-      {
-        name: "Aaditya Rai",
-        role: "Research Coordinator",
-        status: "active",
-        photo: "[SPARK-DEPT-RESEARCH-COORDINATOR-AADITYA-RAI]",
+        photo: "/assets/team/manaswin-research-deputy.jpeg",
       },
     ],
   },
@@ -80,13 +82,13 @@ export const departments: Department[] = [
         name: "Nitya Bharadwaj",
         role: "Executive Head",
         status: "active",
-        photo: "[SPARK-DEPT-PUB-HEAD-NITYA-BHARADWAJ]",
+        photo: "/assets/team/nitya-docpub-head.jpeg",
       },
       {
-        name: "Deputy Head",
+        name: "Riddhee Nigam",
         role: "Deputy Head",
-        status: "pending",
-        photo: null,
+        status: "active",
+        photo: "/assets/team/riddhee-docpub-deputy.jpeg",
       },
     ],
   },
@@ -117,7 +119,7 @@ export const departments: Department[] = [
       "The Tech team handles the technical side of SPARK. From digital platforms and technical requirements to providing support for different activities, the team helps keep the technical side of the society running smoothly.",
     members: [
       {
-        name: "Mudit",
+        name: "Mudit Joshi",
         role: "Executive Head",
         status: "active",
         photo: "[SPARK-DEPT-TECH-HEAD-MUDIT]",
@@ -137,16 +139,16 @@ export const departments: Department[] = [
       "The PR, Marketing & Outreach team focuses on communication, promotion and building connections. The team helps SPARK reach more students, create collaborations and make sure its initiatives reach the right audience.",
     members: [
       {
-        name: "Sumit Kumar",
+        name: "Punam",
         role: "Executive Head",
         status: "active",
-        photo: "[SPARK-DEPT-PR-HEAD-SUMIT-KUMAR]",
+        photo: "[SPARK-DEPT-PR-HEAD-PUNAM]",
       },
       {
-        name: "Guransh Singh",
+        name: "Ritvik Yadav",
         role: "Deputy Head",
         status: "active",
-        photo: "[SPARK-DEPT-PR-DEPUTY-GURANSH-SINGH]",
+        photo: "/assets/team/ritvik-pr-deputy.jpeg",
       },
     ],
   },
@@ -180,13 +182,19 @@ export const departments: Department[] = [
         name: "Utkarsh Gaur",
         role: "Executive Head",
         status: "active",
-        photo: "[SPARK-DEPT-DESIGN-HEAD-UTKARSH-GAUR]",
+        photo: "/assets/team/utkarsh-design-head.jpeg",
       },
       {
-        name: "Divyanshi",
+        name: "Sharad",
         role: "Deputy Head",
         status: "active",
         photo: "[SPARK-DEPT-DESIGN-DEPUTY-DIVYANSHI]",
+      },
+      {
+      name: "Richi Soni",
+        role: "Executive Head",
+        status: "active",
+        photo: "/assets/team/richi-design-deputy.jpeg",
       },
     ],
   },
